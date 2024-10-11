@@ -21,8 +21,8 @@ for repo_name in GenAIComps GenAIEval GenAIExamples GenAIInfra opea-project.gith
   fi
 
   if [ ! -d ${repo_name} ]; then
-    URL=https://github.com/opea-project/${repo_name}.git
-
+    #URL=https://github.com/opea-project/${repo_name}.git
+    URL=https://github.com/NeoZhangJianyu/${repo_name}.git
     echo "git clone $URL"
     git clone $URL
     retval=$?
