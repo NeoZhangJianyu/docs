@@ -41,7 +41,13 @@ echo "Build HTML"
 cd docs
 make clean
 make html
-echo "Build online doc done!"
+
+if [ ! -d _build/html ]; then
+  echo "Build online doc is wrong!"
+  exit 1
+else
+  echo "Build online doc done!"
+fi
 
 echo "update github.io"
 
