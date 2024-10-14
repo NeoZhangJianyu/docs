@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt install git graphviz python3-pkg-resources -y
+sudo apt install git graphviz -y
 
 ENV_NAME=env_sphinx
 deactivate
