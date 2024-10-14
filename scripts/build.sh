@@ -54,7 +54,7 @@ echo "update github.io"
 RELEASE_FOLDER=../opea-project.github.io
 BUILDDIR=_build
 PUBLISHDIR=${RELEASE_FOLDER}/latest
-
+rm -rf ${PUBLISHDIR}/*
 cp -r ${BUILDDIR}/html/*  ${PUBLISHDIR}
 cp scripts/publish-README.md ${PUBLISHDIR}/../README.md
 bash scripts/publish-redirect.sh ${PUBLISHDIR}/../index.html latest/index.html
